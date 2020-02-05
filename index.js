@@ -13,7 +13,10 @@ const me = {
   age: 27,
   pets: {
     cat: "Smokey",
-    dog: "Tux"
+    dog: {
+      dog1: "Tux",
+      dog2: "Stormy"
+    }
   }
 };
 
@@ -22,3 +25,5 @@ me.age = 23;
 me.name = "Matthew";
 
 //console.log(me.pet.cat); // this would read as me.undefined.cat which will give an error because you cannot use .notation on undefined
+
+console.log(me.pets.dog.dog1);
