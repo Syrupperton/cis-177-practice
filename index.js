@@ -1,22 +1,8 @@
-//PASS BY VALUE.
-let x = 3;
+//TODO: log the numbers from 1 to 10
+let x = 1;
 
-let y = x;
-
-console.log(y);
-
-x = 4;
-console.log(y); //PRIMITIVES CANNOT MUTATE.
-//'3' that was used with 'x' previously is thrown out and replaced with 4.
-
-//PASS BY REFERENCE.
-const a = {
-  name: "Matt"
-};
-
-const b = a;
-
-a.name = "Matthew";
-
-console.log(b); //shows 'Matthew'
-//points both 'a' and 'b' to the same memory address
+while (x <= 10) {
+  console.log(x);
+  //always make sure there is an exit condition
+  x++;
+}
