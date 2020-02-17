@@ -1,17 +1,22 @@
-//this is true because primitive data is compared by data
-const a = 49;
-const b = 49;
+//PASS BY VALUE.
+let x = 3;
 
-console.log(a === b);
+let y = x;
 
-//objects compare by reference so the below example will always be false
-//false because OBJECTS are COMPARED BY REFERENCE.
-const x = {
+console.log(y);
+
+x = 4;
+console.log(y); //PRIMITIVES CANNOT MUTATE.
+//'3' that was used with 'x' previously is thrown out and replaced with 4.
+
+//PASS BY REFERENCE.
+const a = {
   name: "Matt"
 };
 
-const y = {
-  name: "Matt"
-};
+const b = a;
 
-console.log(x === y);
+a.name = "Matthew";
+
+console.log(b); //shows 'Matthew'
+//points both 'a' and 'b' to the same memory address
