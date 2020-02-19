@@ -1,8 +1,8 @@
-//TODO: log the numbers from 1 to 10
-let x = 1;
+let i = 1;
 
-while (x <= 10) {
-  console.log(x);
-  //always make sure there is an exit condition
-  x++;
+while (i <= 100) {
+  if (i % 2 === 1) {
+    console.log(i);
+  }
+  i++;
 }
